@@ -161,6 +161,7 @@ select {
     width: 1em;
     height: 1em;
     margin-bottom: -2px;
+    background-color: $color-white;
     @include appearance(none);
   }
   .input-radio:checked {
@@ -472,6 +473,7 @@ select {
   margin-top: 0.4em;
   @include transition (all 0.1s ease-out);
   &:hover {
+    border-color: $color-red;
     background-color: $color-red;
     color: $color-white;
     @include transition (all 0.1s ease-in);
@@ -481,20 +483,7 @@ select {
 .data-download {
   margin-top: 1.7em;
   a {
-    @include appearance(none);
-    background: none;
-    border: 1px solid $color-black;
-    color: $color-black;
-    font-size: 1em;
-    padding: 0.4em 0.5em 0.45em 0.5em;
-    border-radius: 4px;
-    @include transition (all 0.1s ease-out);
-    text-decoration: none;
-    &:hover {
-      border-color: $primary-color;
-      color: $primary-color;
-      @include transition (all 0.1s ease-in);
-    }
+    @extend %simple-button;
   }
 }
 
@@ -545,24 +534,16 @@ select {
 }
 
 .annotation-reset {
-  @include appearance(none);
-  background: none;
-  border: 1px solid $color-black;
-  color: $color-black;
-  font-size: 1em;
-  margin-top: 0.5em;
-  padding: 0.4em 0.5em 0.45em 0.5em;
-  border-radius: 4px;
-  @include transition (all 0.1s ease-out);
-  text-decoration: none;
-  &:hover {
-    border-color: $primary-color;
-    color: $primary-color;
-    @include transition (all 0.1s ease-in);
+  @extend %simple-button;
+}
+
+.anno-range-edit, .anno-highlight-edit {
+  button {
+    @extend %simple-button;
   }
 }
 
-.currently-highlighted {
+.current-anno {
   p {
     text-transform: uppercase;
     font-size: 0.8em;
@@ -591,9 +572,11 @@ select {
     @include span-columns(1 of 10);
   }
 
-  .highlight-remove {
+  button.highlight-remove {
     @include appearance(none);
     opacity: 0;
+    padding: 0;
+    margin-top: 0;
     background: none;
     border: none;
     font-size: 1.2em;
@@ -612,4 +595,41 @@ select {
     @include span-columns(9 of 10);
   }
 
+}
+
+.add-range {
+  background: darken($color-gray-light, 2%);
+  padding: 8px;
+  margin: 1em 0;
+  p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  ul {
+    margin: 0;
+  }
+  .radio-buttons li {
+    display: inline;
+    label {
+      letter-spacing: 1px;
+    }
+    &:first-of-type {
+      margin-right: 1em;
+    }
+  }
+  .start-end {
+    @include clearfix();
+    @include row();
+    margin-bottom: 0.5em;
+    .start-end-unit {
+      // @include span-columns(6 of 12);
+      input {
+        width: 100%;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .delete {
+    @extend .unit-delete;
+  }
 }
