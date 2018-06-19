@@ -1,0 +1,7 @@
+.#{$prefix}yAxis .#{$prefix}minor line {
+  stroke-dasharray: 1, 3px;
+}
+
+.#{$prefix}primary.#{$prefix}type_area .#{$prefix}line.#{$prefix}line-0 {
+  stroke: #1C68A1;
+}

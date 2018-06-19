@@ -92,7 +92,7 @@
   },
 
   "source": {
-    "prefix": "CHART TOOL",
+    "prefix": "HEARING TRACKER",
     "suffix": " » SOURCE:"
   },
 
@@ -120,15 +120,17 @@
   },
 
   "image": {
-    "enable": false,
-    "base_path": "",
+    "enable": true,
+    "base_path": "/chart-images",
     "expiration": 30000,
+    "bucket": "hearing-tracker-charts",
+    "region": "us-east-2",
     "filename": "thumbnail",
     "extension": "png",
-    "thumbnailWidth": 460
+    "thumbnailWidth": 600
   },
 
-  "embedJS": "http://globeandmail.github.io/{{version}}/chart-tool.min.js",
-  "embedCSS": "http://globeandmail.github.io/{{version}}/chart-tool.min.css"
+  "embedJS": "https://charts.hearingtracker.com/{{version}}/chart-tool.min.js",
+  "embedCSS": "https://charts.hearingtracker.com/{{version}}/chart-tool.min.css"
 
 }

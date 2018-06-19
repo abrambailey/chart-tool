@@ -17,11 +17,11 @@ var xAxis = {"display":true,"scale":"time","ticks":"auto","orient":"bottom","for
 var barHeight = 25;
 var barLabelOffset = 6;
 var bands = {"padding":0.12,"offset":0.06,"outerPadding":0.06};
-var source = {"prefix":"CHART TOOL","suffix":" » SOURCE:"};
+var source = {"prefix":"HEARING TRACKER","suffix":" » SOURCE:"};
 var social = {"facebook":{"label":"Facebook","icon":"https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-social-facebook.svg","redirect":"","appID":""},"twitter":{"label":"Twitter","icon":"https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-social-twitter.svg","via":"","hashtag":""},"email":{"label":"Email","icon":"https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-mail.svg"},"sms":{"label":"SMS","icon":"https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-telephone.svg"}};
-var image = {"enable":false,"base_path":"","expiration":30000,"filename":"thumbnail","extension":"png","thumbnailWidth":460};
-var embedJS = "http://globeandmail.github.io/{{version}}/chart-tool.min.js";
-var embedCSS = "http://globeandmail.github.io/{{version}}/chart-tool.min.css";
+var image = {"enable":true,"base_path":"/chart-images","expiration":30000,"bucket":"hearing-tracker-charts","region":"us-east-2","filename":"thumbnail","extension":"png","thumbnailWidth":600};
+var embedJS = "https://charts.hearingtracker.com/{{version}}/chart-tool.min.js";
+var embedCSS = "https://charts.hearingtracker.com/{{version}}/chart-tool.min.css";
 var config = {
 	CUSTOM: CUSTOM,
 	prefix: prefix$1,
