@@ -130,7 +130,7 @@
     "thumbnailWidth": 600
   },
 
-  "embedJS": "https://charts.hearingtracker.com/{{version}}/chart-tool.min.js",
-  "embedCSS": "https://charts.hearingtracker.com/{{version}}/chart-tool.min.css"
+  "embedJS": "https://charts.hearingtracker.com/1.3.0-0/chart-tool.min.js",
+  "embedCSS": "https://charts.hearingtracker.com/1.3.0-0/chart-tool.min.css"
 
 }
