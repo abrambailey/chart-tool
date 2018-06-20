@@ -16,6 +16,9 @@ class RollupConfig {
       replace({
         S3_BUCKET: JSON.stringify(process.env.S3_CHARTTOOL_BUCKET)
       }),
+      replace({
+        S3_REGION: JSON.stringify(process.env.S3_CHARTTOOL_REGION)
+      }),
       nodeResolve({ jsnext: true }),
       commonjs()
     ];

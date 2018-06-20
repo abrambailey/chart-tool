@@ -10,6 +10,7 @@ import {
 } from 'd3-shape';
 import Settings from '../config/chart-settings';
 import bucket from '../config/env';
+import region from '../config/env1';
 import 'core-js/fn/set';
 import 'core-js/fn/array/from';
 
@@ -204,7 +205,7 @@ export function getThumbnailPath(obj) {
   imgSettings.bucket = bucket;
   const id = obj.id.replace(obj.prefix, '');
 
-  return `https://s3.amazonaws.com/${imgSettings.bucket}/${imgSettings.base_path}${id}/${imgSettings.filename}.${imgSettings.extension}`;
+  return `https://s3-${region}.amazonaws.com/${imgSettings.bucket}/${imgSettings.base_path}${id}/${imgSettings.filename}.${imgSettings.extension}`;
 }
 
 export function generateThumb(container, obj) {

@@ -121,10 +121,10 @@
 
   "image": {
     "enable": true,
-    "base_path": "/chart-images",
+    "base_path": "",
     "expiration": 30000,
     "bucket": "hearing-tracker-charts",
-    "region": "us-east-2",
+    "region": "us-west-1",
     "filename": "thumbnail",
     "extension": "png",
     "thumbnailWidth": 600
