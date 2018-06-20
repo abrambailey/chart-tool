@@ -5,17 +5,17 @@
 // $margin: 0 0 20px 0;
 //
 // // Fonts
-// $heading-font-family: 'Helvetica';
+$heading-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 // $heading-font-weight: bold;
 // $heading-font-style: normal;
-// $heading-font-size: 15px;
-// $heading-font-line-height: 17px;
+$heading-font-size: 1rem;
+$heading-font-line-height: normal;
 //
-// $utility-font-family: 'Helvetica';
+$utility-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 // $utility-font-weight: normal;
 // $utility-font-style: normal;
-// $utility-font-size: 13px;
-// $utility-font-line-height: 16px;
+$utility-font-size: .8rem;
+$utility-font-line-height: normal;
 //
 // @mixin heading-font {
 //   font-family: $heading-font-family;

@@ -3810,7 +3810,7 @@ var barLabelOffset = 6;
 var bands = {"padding":0.12,"offset":0.06,"outerPadding":0.06};
 
 var social = {"facebook":{"label":"Facebook","icon":"https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-social-facebook.svg","redirect":"","appID":""},"twitter":{"label":"Twitter","icon":"https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-social-twitter.svg","via":"","hashtag":""},"email":{"label":"Email","icon":"https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-mail.svg"},"sms":{"label":"SMS","icon":"https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-telephone.svg"}};
-var image = {"enable":false,"base_path":"","expiration":30000,"filename":"thumbnail","extension":"png","thumbnailWidth":460};
+var image = {"enable":true,"base_path":"","expiration":30000,"bucket":"hearing-tracker-charts","region":"us-west-1","filename":"thumbnail","extension":"png","thumbnailWidth":600};
 
 var version$1 = "1.3.0";
 var buildVer = "0";
@@ -6285,7 +6285,9 @@ function sum$1(series) {
 }
 
 // defined in rollup.config.js
-var bucket = "chartstg";
+var bucket = "hearing-tracker-charts";
+
+var region = "us-east-2";
 
 var toString$2 = {}.toString;
 
@@ -7656,7 +7658,7 @@ function getThumbnailPath(obj) {
   imgSettings.bucket = bucket;
   var id = obj.id.replace(obj.prefix, '');
 
-  return ("https://s3.amazonaws.com/" + (imgSettings.bucket) + "/" + (imgSettings.base_path) + id + "/" + (imgSettings.filename) + "." + (imgSettings.extension));
+  return ("https://s3-" + region + ".amazonaws.com/" + (imgSettings.bucket) + "/" + (imgSettings.base_path) + id + "/" + (imgSettings.filename) + "." + (imgSettings.extension));
 }
 
 function generateThumb(container, obj) {
