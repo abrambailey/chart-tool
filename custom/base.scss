@@ -34,30 +34,30 @@ $utility-font-line-height: normal;
 // }
 //
 // // Color palettes
-// $primary-color: #1f77b4;
-// $primary-shade-1: #ff7f0e;
-// $primary-shade-2: #bcbd22;
-// $primary-shade-3: #8c564b;
-// $primary-shade-4: #7f7f7f;
-// $primaryShades: $primary-color, $primary-shade-1, $primary-shade-2, $primary-shade-3, $primary-shade-4;
-//
-// $alternate-color: #6b6ecf;
-// $alternate-shade-1: #b5cf6b;
-// $alternate-shade-2: #e7ba52;
-// $alternate-shade-3: #d6616b;
-// $alternate-shade-4: #ce6dbd;
-// $alternateShades: $alternate-color, $alternate-shade-1, $alternate-shade-2, $alternate-shade-3, $alternate-shade-4;
-//
-// $grayscale-color: #000000;
-// $grayscale-shade-1: #333333;
-// $grayscale-shade-2: #555555;
-// $grayscale-shade-3: #888888;
-// $grayscale-shade-4: #aaaaaa;
-// $grayscaleShades: $grayscale-color, $grayscale-shade-1, $grayscale-shade-2, $grayscale-shade-3, $grayscale-shade-4;
-//
-// $palette-count: 3;
-// $palette-names: 'primary', 'alternate', 'grayscale';
-// $palettes: $primaryShades, $alternateShades, $grayscaleShades;
+$primary-color: #2c87c6;
+$primary-shade-1: #fd7e14;
+$primary-shade-2: #bcbd22;
+$primary-shade-3: #8c564b;
+$primary-shade-4: #7f7f7f;
+$primaryShades: $primary-color, $primary-shade-1, $primary-shade-2, $primary-shade-3, $primary-shade-4;
+
+$alternate-color: #6b6ecf;
+$alternate-shade-1: #b5cf6b;
+$alternate-shade-2: #e7ba52;
+$alternate-shade-3: #d6616b;
+$alternate-shade-4: #ce6dbd;
+$alternateShades: $alternate-color, $alternate-shade-1, $alternate-shade-2, $alternate-shade-3, $alternate-shade-4;
+
+$grayscale-color: #000000;
+$grayscale-shade-1: #333333;
+$grayscale-shade-2: #555555;
+$grayscale-shade-3: #888888;
+$grayscale-shade-4: #aaaaaa;
+$grayscaleShades: $grayscale-color, $grayscale-shade-1, $grayscale-shade-2, $grayscale-shade-3, $grayscale-shade-4;
+
+$palette-count: 3;
+$palette-names: 'primary', 'alternate', 'grayscale';
+$palettes: $primaryShades, $alternateShades, $grayscaleShades;
 //
 // // Other colors
 // $color-black: #111111;

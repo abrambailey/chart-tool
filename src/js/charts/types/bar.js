@@ -94,7 +94,7 @@ export default function barChart(node, obj) {
       .text((d, j) => {
         if (d.series[i].val && d.series[i].val !== '__undefined__') {
           let val = setLabelFormat(obj.xAxis.format, d.series[i].val);
-          if (i === 0 && j === obj.data.data.length - 1) {
+          if (i === 0) {
             val = (obj.xAxis.prefix || '') + val + (obj.xAxis.suffix || '');
           }
           return val;
