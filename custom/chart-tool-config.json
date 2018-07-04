@@ -100,7 +100,7 @@
     "facebook": {
       "label": "Facebook",
       "icon": "https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-social-facebook.svg",
-      "redirect": "https://hearingtracker.us8.list-manage.com/subscribe/post?u=596dc3d104cda2cbfb994bd69&id=790a5b8263",
+      "redirect": "https://www.hearingtracker.com/users/sign_up",
       "appID": "1402805259934021"
     },
     "twitter": {
